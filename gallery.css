@@ -1,0 +1,16 @@
+/* gallery.css */
+ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+ul li img {
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+ul li img.active, ul li img:hover {
+    filter: grayscale(0%);
+}
